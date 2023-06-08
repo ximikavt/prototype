@@ -1,0 +1,10 @@
+﻿@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+:host {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}

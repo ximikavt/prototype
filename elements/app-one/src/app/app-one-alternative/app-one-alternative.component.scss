@@ -1,0 +1,8 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+:host {
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+  justify-content: flex-start;
+}

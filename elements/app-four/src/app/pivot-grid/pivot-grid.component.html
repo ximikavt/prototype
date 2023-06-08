@@ -1,0 +1,64 @@
+<h1>Rich Grid Example</h1>
+<div style="width: 800px">
+    <div style="display: inline-block; width: 100%">
+        <div style="float: left">
+            <b>Employees Skills and Contact Details: </b>{{rowCount}}
+        </div>
+    </div>
+    <div style="margin-top: 10px">
+        <div>
+            <span>
+                Grid API:
+                <button (click)="this.api.selectAll()" class="btn btn-primary">Select All</button>
+                <button (click)="this.api.deselectAll()" class="btn btn-primary">Clear Selection</button>
+            </span>
+            <span style="float: right">
+                Column API:
+                <button (click)="this.columnApi.setColumnVisible('country', false)" class="btn btn-primary">Hide Country Column</button>
+                <button (click)="this.columnApi.setColumnVisible('country', true)" class="btn btn-primary">Show Country Column</button>
+            </span>
+        </div>
+    </div>
+    <div style="display: inline-block; width: 100%; margin-top: 10px; margin-bottom: 10px">
+        <div style="float: left">
+            <button (click)="this.createRowData()" class="btn btn-primary">Refresh Data</button>
+        </div>
+        <div style="float: right">
+            Filter API:
+            <button (click)="this.invokeSkillsFilterMethod()" class="btn btn-primary">Invoke Skills Filter Method
+            </button>
+            <button (click)="this.dobFilter()" class="btn btn-primary">DOB equals to 01/01/2000</button>
+        </div>
+    </div>
+    <div style="display: inline-block; width: 100%; margin-top: 10px; margin-bottom: 10px">
+        <div style="float: left">
+            <label for="sideBarToggle">Show Side Bar&nbsp;</label>
+            <input (change)="showSideBar($event)" id="sideBarToggle" style="margin-right: 5px"
+                    type="checkbox"/>
+        </div>
+        <div style="float: right; margin-left: 20px">
+            <label for="quickFilter">Quick Filter:&nbsp;</label>
+            <input (keyup)="onQuickFilterChanged($event)" id="quickFilter" placeholder="Type text to filter..."
+                    style="margin-right: 10px" type="text"/>
+        </div>
+    </div>
+</div>
+<ag-grid-angular (cellClicked)="onCellClicked($event)" (cellContextMenu)="onCellContextMenu($event)"
+        (cellDoubleClicked)="onCellDoubleClicked($event)"
+        (gridReady)="onGridReady($event)"
+        (modelUpdated)="onModelUpdated()"
+
+        [columnDefs]="columnDefs"
+
+        [defaultColDef]="defaultColDef"
+        [rowData]="rowData"
+
+        [sideBar]="sideBar"
+        class="ag-theme-balham"
+
+        enableCharts
+        enableRangeSelection
+        rowSelection="multiple"
+        style="width: 100%; padding-right: 20px; height: 650px;"
+        suppressRowClickSelection>
+</ag-grid-angular>
