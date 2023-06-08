@@ -1,0 +1,44 @@
+[
+    {
+        "route": "app-one",
+        "name": "App 1",
+        "script": "elements/element-app-one.js",
+        "id": "element-app-one",
+        "selector": "element-app-one"
+    },
+    {
+        "route": "app-one-alternative",
+        "name": "App 1 alternative",
+        "script": "elements/element-app-one.js",
+        "id": "element-app-one",
+        "selector": "element-app-one-alternative"
+    },
+    {
+        "route": "app-nested-one",
+        "name": "App Nested 1",
+        "script": "elements/element-app-nested-one.js",
+        "id": "element-app-nested-one",
+        "selector": "element-app-nested-one"
+    },
+    {
+        "route": "app-nested-two",
+        "name": "App Nested 2",
+        "script": "elements/element-app-nested-two.js",
+        "id": "element-app-nested-two",
+        "selector": "element-app-nested-two"
+    },
+    {
+        "route": "app-three",
+        "name": "App 3",
+        "script": "elements/element-app-three.js",
+        "id": "element-app-three",
+        "selector": "element-app-three"
+    },
+    {
+        "route": "app-four",
+        "name": "App 4",
+        "script": "elements/element-app-four.js",
+        "id": "element-app-four",
+        "selector": "element-app-four"
+    }
+]

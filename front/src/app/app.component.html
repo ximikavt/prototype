@@ -1,0 +1,9 @@
+<div [class.main-page]="!(showHomeButton$ | async)" class="heading">
+    <a *ngIf="showHomeButton$ | async" color="warn" mat-fab routerLink="/">
+        <mat-icon fontIcon="home"></mat-icon>
+    </a>
+    <app-list></app-list>
+</div>
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
