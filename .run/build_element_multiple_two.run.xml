@@ -1,0 +1,13 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="build:element:multiple:two" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/elements/multiple-projects/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="element:two" />
+    </scripts>
+    <node-interpreter value="project" />
+    <package-manager value="yarn" />
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>

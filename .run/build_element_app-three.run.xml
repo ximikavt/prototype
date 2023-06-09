@@ -1,0 +1,13 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="build:element:app-three" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/elements/app-three/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="element" />
+    </scripts>
+    <node-interpreter value="project" />
+    <package-manager value="yarn" />
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>
